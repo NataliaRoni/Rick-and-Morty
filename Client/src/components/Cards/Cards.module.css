@@ -1,0 +1,8 @@
+.divGeneral {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 600px;
+  padding-top: 50px;
+}

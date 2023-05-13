@@ -1,0 +1,67 @@
+.divGeneral {
+  background-image: url("../images/backcard.jpg");
+  background-size: 320px 530px;
+  border-style: solid;
+  border-color: #2e7f33;
+  display: inline-block;
+  border-radius: 20px;
+  color: white;
+  padding: 5px;
+  opacity: 0.9;
+}
+
+.divGeneral:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.divButtonPosition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttonStyle {
+  border-radius: 40px;
+  background-color: transparent;
+  font-family: "Myfont";
+  border: none;
+  display: block;
+  height: 45px;
+  width: 45px;
+  opacity: 0.8;
+  margin-right: 10px;
+  background-image: url("../images/eliminar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.buttonStyle:hover {
+  opacity: 1;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: inherit;
+}
+
+.imgBorderStyle {
+  border-color: white;
+  border-radius: 150px;
+}
+
+.divSeparate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.buttonFavStyle {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  opacity: 0.8;
+}
