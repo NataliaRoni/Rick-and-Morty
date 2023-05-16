@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Styles from "./Nav.module.css";
 import logo from "../images/logo.png";
 import { useState } from "react";
+import { BsSearch } from "react-icons/bs";
 
 export default function Nav(props) {
   const [id, setId] = useState("");
@@ -29,13 +30,14 @@ export default function Nav(props) {
           className={Styles.inputStyle}
           onChange={handleChange}
           type="search"
+          placeholder="Enter id"
         />
 
         <button
-          className={Styles.buttonStyle}
+          className={Styles.buttonAddStyle}
           onClick={() => props.onSearch(id)}
         >
-          Add
+          <BsSearch color="white" strokeWidth="0.8" />
         </button>
 
         <button className={Styles.buttonStyle} onClick={() => props.onRandom()}>

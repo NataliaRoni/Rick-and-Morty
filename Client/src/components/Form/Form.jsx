@@ -64,7 +64,7 @@ export default function Form({ login }) {
           {errors.password && <p>{errors.password}</p>}
         </div>
         <div className={Styles.divButtonContainer}>
-          <button className={Styles.buttonStyle}>Login</button>
+          <button className={Styles.buttonStyle}></button>
         </div>
       </form>
     </div>

@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { useState } from "react";
 import { useEffect } from "react";
 import Styles from "./Card.module.css";
+import { BsFillTrash3Fill } from "react-icons/bs";
 
 export function Card(props) {
   const [isFav, setIsFav] = useState(false);
@@ -40,10 +41,9 @@ export function Card(props) {
           </button>
         )}
         {location.pathname === "/home" && (
-          <button
-            className={Styles.buttonStyle}
-            onClick={props.onClose}
-          ></button>
+          <button className={Styles.buttonStyle} onClick={props.onClose}>
+            <BsFillTrash3Fill color="white" size="30" />
+          </button>
         )}
       </div>
       <Link className={Styles.linkStyle} to={`/detail/${props.id}`}>
