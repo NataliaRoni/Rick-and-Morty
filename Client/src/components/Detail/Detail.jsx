@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Styles from "./Detail.module.css";
+import { BiArrowBack } from "react-icons/bi";
 
 export default function Detail(props) {
   const { id } = useParams();
@@ -24,16 +26,24 @@ export default function Detail(props) {
   }, [id]);
 
   return (
-    <div>
+    <div className={Styles.divGeneral}>
       <Link to="/home">
-        <button>Back</button>
+        <button className={Styles.buttonBackStyle}>
+          <BiArrowBack />
+        </button>
       </Link>
-      <h1>Name: {character.name}</h1>
-      <h2>Status: {character.status}</h2>
-      <h2>Specie: {character.species}</h2>
-      <h2>Gender: {character.gender}</h2>
-      <h2>Origin: {character.origin?.name}</h2>
-      <img src={character.image} />
+      <div className={Styles.cardContent}>
+        <div className={Styles.imgName}>
+          <h1>{character.name}</h1>
+          <img src={character.image} className={Styles.image} />
+        </div>
+        <div className={Styles.info}>
+          <h2>Status: {character.status}</h2>
+          <h2>Specie: {character.species}</h2>
+          <h2>Gender: {character.gender}</h2>
+          <h2>Origin: {character.origin?.name}</h2>
+        </div>
+      </div>
     </div>
   );
 }
