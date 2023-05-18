@@ -34,7 +34,7 @@ export default function Detail(props) {
       </Link>
       <div className={Styles.cardContent}>
         <div className={Styles.imgName}>
-          <h1>{character.name}</h1>
+          <h1 className={Styles.h1Character}>{character.name}</h1>
           <img src={character.image} className={Styles.image} />
         </div>
         <div className={Styles.info}>
