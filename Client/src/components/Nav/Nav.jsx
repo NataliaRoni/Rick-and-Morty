@@ -3,6 +3,9 @@ import Styles from "./Nav.module.css";
 import logo from "../images/logo.png";
 import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
+import { FaHome } from "react-icons/fa";
+import { BsFillPersonFill } from "react-icons/bs";
+import { BsFillBagHeartFill } from "react-icons/bs";
 
 export default function Nav(props) {
   const [id, setId] = useState("");
@@ -16,13 +19,21 @@ export default function Nav(props) {
       <img className={Styles.imgLogo} src={logo} alt="" />
       <div className={Styles.divLinkContainer}>
         <Link to="/home">
-          <p>Home</p>
+          <p>
+            <FaHome color="white" style={{ marginRight: "2px" }} /> Home
+          </p>
         </Link>
         <Link to="/about">
-          <p>About</p>
+          <p>
+            <BsFillPersonFill color="white" style={{ marginRight: "3px" }} />
+            About
+          </p>
         </Link>
         <Link to="/favorites">
-          <p>My Favorites</p>
+          <p>
+            <BsFillBagHeartFill color="white" style={{ marginRight: "3px" }} />
+            Favorites
+          </p>
         </Link>
       </div>
       <div className={Styles.divButtonContainer}>

@@ -11,6 +11,7 @@ router.get("/character/:id", getCharById);
 router.post("/login", postUser);
 router.get("/login", login);
 router.post("/fav", postFav);
+
 router.delete("/fav/:id", deleteFav);
 
 module.exports = router;
