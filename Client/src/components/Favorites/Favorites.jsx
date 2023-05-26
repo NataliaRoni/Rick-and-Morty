@@ -51,16 +51,20 @@ export default function Favorites() {
         </div>
       </div>
       <div className={Styles.divGeneral}>
-        {myFavorites?.map(({ id, name, species, image, gender }) => (
-          <Card
-            key={id}
-            id={id}
-            name={name}
-            species={species}
-            image={image}
-            gender={gender}
-          />
-        ))}
+        {myFavorites?.map(
+          ({ id, name, species, image, gender, origin, status }) => (
+            <Card
+              key={id}
+              id={id}
+              name={name}
+              species={species}
+              image={image}
+              gender={gender}
+              origin={origin}
+              status={status}
+            />
+          )
+        )}
       </div>
     </div>
   );
