@@ -1,5 +1,7 @@
 .divGeneral {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
   padding: 20px;
   background-color: rgba(46, 127, 51, 0.5);
   border-radius: 1.5rem;
@@ -8,9 +10,24 @@
   -webkit-box-shadow: 1px 2px 20px 0px rgba(46, 127, 51, 1);
   -moz-box-shadow: 1px 2px 20px 0px rgba(46, 127, 51, 1);
   box-shadow: 1px 2px 20px 0px rgba(46, 127, 51, 1);
-  max-width: 700px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
+}
+.izquierda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.derecha {
+  flex: 1;
+  color: white;
+  align-items: center;
+  margin-top: 80px;
 }
 
 .buttonBackStyle {
@@ -34,18 +51,55 @@
 }
 
 .image {
-  width: 380px;
+  width: 280px;
   margin-right: 10px;
   margin-left: 20px;
-  margin-top: 10px;
-  border-radius: 200px;
+  border-radius: 20px;
   border-style: solid;
   border-color: #8dfe03c8;
 }
 
-.buttonLinkedin {
+.buttonSocials1 {
   background-color: transparent;
-  color: white;
   border: none;
   cursor: pointer;
+  font-size: 40px;
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+}
+
+.buttonSocials2 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  height: 45px;
+  width: 45px;
+  margin-left: 10px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.pNatalia {
+  color: #8dfe03c8;
+  font-size: 25px;
+}
+
+.pFullStack {
+  color: #8dfe03c8;
+  font-size: 25px;
+}
+
+.pApp {
+  font-size: 20px;
+}
+
+.tool {
+  height: 50px;
+  width: 50px;
 }
