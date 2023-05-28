@@ -5,8 +5,8 @@ import loginimg from "../images/login.png";
 
 export default function Form({ login }) {
   const [userData, setUserData] = React.useState({
-    email: "",
-    password: "",
+    email: "nataliasofiaroni@gmail.com",
+    password: "Hola$123",
   });
 
   const [errors, setErrors] = React.useState({
@@ -32,7 +32,7 @@ export default function Form({ login }) {
   return (
     <div className={Styles.divGeneral}>
       <form className={Styles.formStyle} onSubmit={handleSubmit}>
-        <img className={Styles.imgStyle} src={loginimg}></img>
+        <img alt="login" className={Styles.imgStyle} src={loginimg}></img>
         <div>
           <label className={Styles.labelStyle} htmlFor="email">
             Email:

@@ -103,3 +103,44 @@
   height: 50px;
   width: 50px;
 }
+
+@media (max-width: 768px) {
+  .divGeneral {
+    padding: 10px;
+  }
+
+  .izquierda {
+    margin-right: 0;
+  }
+
+  .derecha {
+    margin-top: 40px;
+  }
+
+  .image {
+    width: 180px;
+    margin-left: 0;
+  }
+
+  .botones {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .pNatalia {
+    font-size: 20px;
+  }
+
+  .pFullStack {
+    font-size: 20px;
+  }
+
+  .pApp {
+    font-size: 16px;
+  }
+
+  .tool {
+    height: 40px;
+    width: 40px;
+  }
+}

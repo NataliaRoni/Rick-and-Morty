@@ -37,20 +37,21 @@ export default function Nav(props) {
         </Link>
       </div>
       <div className={Styles.divButtonContainer}>
-        <input
-          className={Styles.inputStyle}
-          onChange={handleChange}
-          type="search"
-          placeholder="Enter id"
-        />
+        <div className={Styles.add}>
+          <input
+            className={Styles.inputStyle}
+            onChange={handleChange}
+            type="search"
+            placeholder="Enter id"
+          />
 
-        <button
-          className={Styles.buttonAddStyle}
-          onClick={() => props.onSearch(id)}
-        >
-          <BsSearch color="white" strokeWidth="0.8" />
-        </button>
-
+          <button
+            className={Styles.buttonAddStyle}
+            onClick={() => props.onSearch(id)}
+          >
+            <BsSearch color="white" strokeWidth="0.9" />
+          </button>
+        </div>
         <button className={Styles.buttonStyle} onClick={() => props.onRandom()}>
           Random
         </button>
