@@ -19,18 +19,18 @@ export default function Nav(props) {
       <img className={Styles.imgLogo} src={logo} alt="" />
       <div className={Styles.divLinkContainer}>
         <Link to="/home">
-          <p>
+          <p className={Styles.Link}>
             <FaHome color="white" style={{ marginRight: "2px" }} /> Home
           </p>
         </Link>
         <Link to="/about">
-          <p>
+          <p className={Styles.Link}>
             <BsFillPersonFill color="white" style={{ marginRight: "3px" }} />
             About
           </p>
         </Link>
         <Link to="/favorites">
-          <p>
+          <p className={Styles.Link}>
             <BsFillBagHeartFill color="white" style={{ marginRight: "3px" }} />
             Favorites
           </p>

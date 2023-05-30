@@ -129,6 +129,10 @@
     align-items: center;
   }
 
+  .Link {
+    padding-left: 10px;
+  }
+
   .add {
     flex-direction: row;
     align-items: center;
