@@ -27,7 +27,7 @@ Welcome to the Henry integrative project repository! Inspired by the famous TV s
 
 ## Access to the Application 🎉
 
-Explore the application! [Rick and Morty App 👽] (https://rick-and-morty-front-theta.vercel.app/)
+Explore the application! [Rick and Morty App 👽](https://rick-and-morty-front-theta.vercel.app/)
 
 ## Reporting Issues 🐞
 
