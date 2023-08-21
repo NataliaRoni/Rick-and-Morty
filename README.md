@@ -23,7 +23,7 @@ Welcome to the Henry integrative project repository! Inspired by the famous TV s
 - Node
 - Express
 - Sequelize
-- Postgres
+- PostgreSQL
 
 ## Access to the Application 🎉
 
